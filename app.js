@@ -11,7 +11,7 @@ var notify = require('./routes/notify');
 var call = require('./routes/call');
 var chat = require('./routes/chat');
 var email = require('./routes/email');
-var help = require('./routes/help');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -32,7 +32,7 @@ app.use('/notify', notify);
 app.use('/call', call);
 app.use('/chat', chat);
 app.use('/email', email);
-app.use('/help', help);
+app.use('/profile', profile);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
